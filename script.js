@@ -9,4 +9,15 @@ function getComputerChoice() {
     }
 }
 
-console.log(getComputerChoice())
+function getHumanChoice() {    
+    const answer = window.prompt('r for rock, p for paper, s for scissor')
+    if (answer === 'r') {
+        return 'rock'
+    } else if(answer === 'p') {
+        return 'paper'
+    } else if(answer === s) {
+        return'scissor'
+    }
+}
+
+console.log(getHumanChoice())
