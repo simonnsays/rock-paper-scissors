@@ -67,7 +67,9 @@ function displayResult(humanAnswer, computerAnswer, winner) {
     computerEl.appendChild(compImg)
 
     const result = document.querySelector('.result')
-    result.textContent = `${winner} won this round`
+    result.textContent = winner !== 'draw' 
+            ? `${winner} won this round`
+            : `It's a draw`
 
     document.querySelector('.human-score').textContent = humanScore
     document.querySelector('.comp-score').textContent = computerScore
