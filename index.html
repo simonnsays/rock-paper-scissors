@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>MAKE YOUR CHOICE</h1>
     <div class="container">
         <button id="rock">
             <img src="Rock.png" alt="rock" width="200" height="200">
@@ -17,6 +18,23 @@
         <button id="scissors">
             <img src="Scissors.png" alt="scissors" width="200" height="200">
         </button>
+    </div>
+    <div class="hb"></div>
+    <div id="output">
+        <div class="tally">
+            <div class="human">
+                <div class="image-choice"></div>
+                <p>YOU</p>
+                <p class="human-score"></p>
+            </div>
+            <h1>VS</h1>
+            <div class="computer">
+                <div class="image-choice"></div>
+                <p>COMPUTER</p>
+                <p class="comp-score"></p>
+            </div>
+        </div>
+        <p class="result"></p>
     </div>
 
     <script src="script.js"> </script>

@@ -1,8 +1,13 @@
+:root {
+    font-family: sans-serif;
+}
+
 body {
     width: 100vw;
     height: 400px;
     overflow: scroll;
     display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
 }
@@ -11,6 +16,9 @@ body {
     margin: auto;
     display: flex;
     gap: 20px;
+}
+h1 {
+    margin: 50px auto;
 }
 
 button {
@@ -24,7 +32,7 @@ button {
     justify-content: center;
     align-items: flex-end;
     overflow: hidden;
-    transition: all .2s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 button:hover {
     scale: 1.2;
@@ -33,14 +41,6 @@ button:hover {
 #rock {
     background-color: #FA8072;
 }
-#rock img {
-    /* position: absolute; */
-    z-index: 0;
-
-    /* scale: 2; */
-    display: flex;
-    transform: translate(X);
-}
 
 #paper {
     background-color: #77DD77;
@@ -48,4 +48,36 @@ button:hover {
 
 #scissors {
     background-color: #A7C7E7;
+}
+
+#output {
+    margin: 50px auto;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+}
+
+.tally {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.human,
+.computer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hb {
+    width: 700px;
+    border: 1px solid black;
+    margin: 50px auto 0 auto;
 }
