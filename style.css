@@ -1,0 +1,51 @@
+body {
+    width: 100vw;
+    height: 400px;
+    overflow: scroll;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+button:hover {
+    scale: 1.2;
+}
+
+#rock {
+    background-color: #FA8072;
+}
+#rock img {
+    /* position: absolute; */
+    z-index: 0;
+
+    /* scale: 2; */
+    display: flex;
+    transform: translate(X);
+}
+
+#paper {
+    background-color: #77DD77;
+}
+
+#scissors {
+    background-color: #A7C7E7;
+}

@@ -21,9 +21,6 @@ function getHumanChoice() {
 } 
 
 function playGame() {
-    let humanScore = 0
-    let computerScore = 0
-
     function playRound(humanChoice, computerChoice) {
         const humanAnswer = humanChoice.toLowerCase()
         const computerAnswer = computerChoice.toLowerCase()
@@ -42,6 +39,9 @@ function playGame() {
             alert("You lose! " + computerAnswer + " beats " + humanAnswer) 
         }
     }
+    let humanScore = 0
+    let computerScore = 0
+
 
 
     for(let i = 0; i < 5; i++) {
@@ -65,4 +65,4 @@ function playGame() {
 }
 
 
-playGame()
+// playGame()
